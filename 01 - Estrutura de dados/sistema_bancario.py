@@ -1,17 +1,12 @@
 def menu():
-    menu = f"""
-    {" MENU ".center(41, "=")}
+    menu = """\n
+    ================ MENU ================
+    [1]\tDepositar \t\t[4]\tNova conta
+    [2]\tSacar \t\t\t[5]\tListar contas
+    [3]\tExtrato \t\t[6]\tNovo usuário
 
-    Escolha a opção desejada e pressione enter:\n
-    [1] Depositar
-    [2] Sacar
-    [3] Extrato
-    [4] Abrir nova conta
-    [5] Listar suas contas
-    [6] Cadastro de novo usuário
-    [7] Sair
-    
-    Opção: """
+    \t\t\t\t[0]\tSair
+    => """
     
     return input(menu)
 
