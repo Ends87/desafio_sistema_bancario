@@ -1,11 +1,8 @@
-menu = """
-
-[d] Depositar
-[s] Sacar
-[e] Extrato
-[q] Sair
- 
-=> """
+menu = """\n
+    ================ MENU ================
+    [1]\tDepositar \t\t[3]\tExtrato
+    [2]\tSacar \t\t\t[0]\tSair
+    => """
 
 saldo = 0
 limite = 500
@@ -17,7 +14,7 @@ while True:
 
     opcao = input(menu)
 
-    if opcao == "d":
+    if opcao == "1":
         valor_deposito = float(input("Valor a ser depositado: "))
         if valor_deposito > 0:
             saldo += valor_deposito
@@ -27,7 +24,7 @@ while True:
         else:
             print("\nOperação falhou! O valor informado é inválido.")
 
-    elif opcao == "s":
+    elif opcao == "2":
         valor_saque = float(input("Valor que deseja sacar: "))
         
         if valor_saque > saldo:
@@ -48,7 +45,7 @@ while True:
         else:
             print("\nOperação não concluída. Algo deu errado.")
     
-    elif opcao == "e":
+    elif opcao == "3":
         titulo_extrato = " EXTRATO ".center(41, "=")
         print()
         print(titulo_extrato)
@@ -59,7 +56,7 @@ while True:
         rodape_extrato = "=".center(41, "=")
         print(rodape_extrato)
 
-    elif opcao == "q":
+    elif opcao == "0":
         break
 
     else:
