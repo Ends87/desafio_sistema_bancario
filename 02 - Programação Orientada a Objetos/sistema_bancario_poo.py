@@ -231,20 +231,15 @@ class ContaCorrente(Conta): ...
 
 
 def menu():
-    menu = f"""
-    {" MENU ".center(41, "=")}
+    menu = """\n
+    ================ MENU ================
+    [1]\tDepositar \t\t[4]\tNova conta
+    [2]\tSacar \t\t\t[5]\tListar contas
+    [3]\tExtrato \t\t[6]\tNovo usuário
 
-    Escolha a opção desejada e pressione enter:\n
-    [1] Depositar
-    [2] Sacar
-    [3] Extrato
-    [4] Abrir nova conta (se ja possuir CPF cadastrado)
-    [5] Listar suas contas
-    [6] Cadastro de novo Cliente/CPF
-    [7] Sair
+    \t\t\t\t[0]\tSair
+    => """
     
-    Opção: """
-
     return input(menu)
 
 
